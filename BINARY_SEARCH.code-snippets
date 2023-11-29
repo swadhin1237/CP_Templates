@@ -1,0 +1,39 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Print to console": {
+		"scope": "cpp",
+		"prefix": "BS",
+		"body": [
+			"int check(int mid,vector<int>& v)",
+			"{",
+			"\t$0",
+			"}",
+			"int binarysearchfor111000(int lo, int hi,vector<int>& v)",
+			"{",
+			"\t// provide the checker function , s.t. check(mid)=1 if mid is a possible ans otherwise check(mid)=0",
+			"\tint ans=0;",
+			"\twhile(lo<=hi)",
+			"\t{",
+			"\t\tint mid=lo+(hi-lo)/2;",
+			"\t\tif(check(mid,v))",
+			"\t\t{",
+			"\t\t\tans=mid;",
+			"\t\t\tlo=mid+1;",
+			"\t\t}",
+			"\t\telse",
+			"\t\t{",
+			"\t\t\thi=mid-1;",
+			"\t\t}",
+			"\t}",
+			"\treturn ans;",
+			"}"
+		],
+		"description": "Log output to console"
+	}
+}
